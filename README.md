@@ -8,10 +8,10 @@ in this project i was gain somw new knowledge about next.js and som fundamental 
 - routing structure.
 
 Dependincies and libraries used 
--react.js
--tailwind
--mongoDB
--react-router
+- react.js
+- tailwind
+- mongoDB
+- react-router
 - Axios
 
 
