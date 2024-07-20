@@ -10,6 +10,8 @@ import { NextResponse } from "next/server";
  
  LoadDB();
 
+
+// create a new email
  export  async function POST(request) {
     const formData = await request.formData();
     const emailData = {
@@ -20,12 +22,17 @@ import { NextResponse } from "next/server";
     return NextResponse.json({success:true , msg:"Email Subscribed"})
  }
 
+
+// retriving the existing email
  export async function GET(request){
    const emails = await EmailModel.find({});
 
    return NextResponse.json({emails});
  }
 
+
+
+// delete the email
  export async function DELETE(request) {
    const id = await request.nextUrl.searchParams.get('id');
 
