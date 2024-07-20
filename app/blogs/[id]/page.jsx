@@ -11,6 +11,7 @@ const page = ({ params }) => {
 
   const [data, setData] = useState(null);
 
+  // retriving the blog data
   const fetchBlogData = async () => {
     const response =  await axios.get('/api/blog',{
       params: { 
